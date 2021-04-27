@@ -1128,7 +1128,7 @@ module.exports = {
       return response(res, 'Error', { error: error.message }, 404, false)
     } else {
       const first = ['No', 'Nama Depo', 'Kode Plant', 'Profit Center', 'Kode SAP 1', 'Status Depo', 'Tanggal Dokumen', 'Tanggal Upload']
-      const last = ['Jumlah File Upload', 'Persentase', 'Status', 'Uploaded By']
+      const last = ['Jumlah File Upload', 'Persentase', 'Status', 'Jenis Dokumen', 'Uploaded By']
       if (level === 1 || level === 2 || level === 3) {
         if (results.pic !== '') {
           const findPic = await pic.findAll({

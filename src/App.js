@@ -12,7 +12,7 @@ const app = express()
 const server = require('http').createServer(app)
 const io = require('socket.io')(server, {
   cors: {
-    origin: 'http://localhost:7575',
+    origin: 'http://35.219.64.61:7575',
     methods: ['GET', 'POST'],
     allowedHeaders: ['Authorization'],
     credentials: true
